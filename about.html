@@ -304,9 +304,22 @@
             <span class="full-footer">Copyrights</span> © <span id="auto-date">2020</span> <span class="full-footer">All rights reserved</span> | Design by <span class="i fw5 builder">PaulstaGraphics</span>
         </div>
     </div><!-- [ End Footer ] -->
+
+    <!--======================
+    // Scripts:
+    ======================-->
+    <script src="js/app.min.js"></script>
+
+    <script>
+        setTimeout(owlReplace, 300);
+
+        function owlReplace(){
+            var owlPrev = document.getElementsByClassName("owl-prev")[0];
+            owlPrev.innerHTML = `<span aria-label="Previous"><img style="height: 35px;" class="prev" src="media/img/prev.svg"></span>`;
+            
+            var owlNext = document.getElementsByClassName("owl-next")[0];
+            owlNext.innerHTML = `<span aria-label="Next"><img style="height: 35px;" class="next" src="media/img/next.svg"></span>`;
+        };
+    </script>
 </body>
-<!--======================
-// Scripts:
-======================-->
-<script src="js/app.min.js"></script>
 </html>
